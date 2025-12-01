@@ -21,7 +21,15 @@ class PostsController extends Controller
     //     return Post::findOrFail($id);
     // }
 
+    // function show(Post $post) {
+    //     return $post;
+    // }
+
     function show(Post $post) {
-        return $post;
+        // return view('posts.show', [
+        //     'post' => $post
+        // ]);
+        // vagy rövidebben:
+        return view('posts.show', compact('post'));
     }
 }
